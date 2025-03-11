@@ -1,0 +1,30 @@
+=== grpc_main_bin started at 2025-03-11T13:24:40.292Z ===
+
+Connected to gRPC stream
+Subscription request sent
+ERROR: Stream error: Error: 13 INTERNAL: Request message serialization failure: Cannot convert undefined or null to object
+    at callErrorFromStatus (/Users/wangyuxiang/raydium_getData_Compare/node_modules/@grpc/grpc-js/build/src/call.js:32:19)
+    at Object.onReceiveStatus (/Users/wangyuxiang/raydium_getData_Compare/node_modules/@grpc/grpc-js/build/src/client.js:421:73)
+    at Object.onReceiveStatus (/Users/wangyuxiang/raydium_getData_Compare/node_modules/@grpc/grpc-js/build/src/client-interceptors.js:324:181)
+    at /Users/wangyuxiang/raydium_getData_Compare/node_modules/@grpc/grpc-js/build/src/resolving-call.js:129:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+for call at
+    at ServiceClientImpl.makeBidiStreamRequest (/Users/wangyuxiang/raydium_getData_Compare/node_modules/@grpc/grpc-js/build/src/client.js:405:32)
+    at ServiceClientImpl.subscribe (/Users/wangyuxiang/raydium_getData_Compare/node_modules/@grpc/grpc-js/build/src/make-client.js:105:19)
+    at Client.subscribe (file:///Users/wangyuxiang/raydium_getData_Compare/node_modules/@triton-one/yellowstone-grpc/dist/esm/index.js:67:35)
+    at GrpcStreamManager.connect (file:///Users/wangyuxiang/raydium_getData_Compare/connect_method/grpc.js:23:39)
+    at subscribeToPoolGrpc (file:///Users/wangyuxiang/raydium_getData_Compare/connect_method/grpc.js:162:17)
+    at file:///Users/wangyuxiang/raydium_getData_Compare/getData/grpc_main_bin.js:42:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:273:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:600:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:98:5) {
+  code: 13,
+  details: 'Request message serialization failure: Cannot convert undefined or null to object',
+  metadata: Metadata { internalRepr: Map(0) {}, options: {} }
+}
+Disconnected from gRPC stream
+Reconnection attempt 1...
+Connected to gRPC stream
+Subscription request sent
+
+=== grpc_main_bin exited with code null at 2025-03-11T13:25:40.334Z ===

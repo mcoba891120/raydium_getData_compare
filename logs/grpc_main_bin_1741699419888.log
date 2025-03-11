@@ -1,0 +1,22 @@
+=== grpc_main_bin started at 2025-03-11T13:23:39.888Z ===
+
+ERROR: node:internal/modules/esm/resolve:275
+    throw new ERR_MODULE_NOT_FOUND(
+          ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/wangyuxiang/raydium_getData_Compare/decoder/base58.js' imported from /Users/wangyuxiang/raydium_getData_Compare/connect_method/grpc.js
+    at finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    at moduleResolve (node:internal/modules/esm/resolve:860:10)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:736:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:660:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:643:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:279:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND',
+  url: 'file:///Users/wangyuxiang/raydium_getData_Compare/decoder/base58.js'
+}
+
+Node.js v23.9.0
+
+=== grpc_main_bin exited with code 1 at 2025-03-11T13:23:39.931Z ===

@@ -1,0 +1,17 @@
+=== wss_multiEncoding started at 2025-03-11T13:24:40.292Z ===
+
+Subscribing to pool 8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj...
+WebSocket connection established
+WebSocket connection established
+WebSocket connection established
+Subscription ID: 479
+WebSocket connection established
+Subscription ID: 479
+Subscription ID: 480
+Subscription ID: 469
+Ping sent
+Ping sent
+Ping sent
+Ping sent
+
+=== wss_multiEncoding exited with code null at 2025-03-11T13:25:40.333Z ===

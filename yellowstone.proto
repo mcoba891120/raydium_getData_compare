@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+package yellowstone;
+
+service Yellowstone {
+  // Subscribe to account updates
+  rpc AccountSubscribe(AccountSubscribeRequest) returns (stream AccountUpdate);
+  
+  // Unsubscribe from account updates
+  rpc AccountUnsubscribe(AccountUnsubscribeRequest) returns (AccountUnsubscribeResponse);
+}
+
+// Request to subscribe to account updates
+message AccountSubscribeRequest {
+  repeated AccountSubscriptionFilter accounts = 1;
+  string commitment = 2;
+}
+
+// Filter for account subscription
+message AccountSubscriptionFilter {
+  string account = 1;
+  string encoding = 2;
+}
+
+// Account update message
+message AccountUpdate {
+  string account = 1;
+  AccountData data = 2;
+  uint64 slot = 3;
+}
+
+// Account data, can be in different encodings
+message AccountData {
+  oneof data {
+    bytes binary = 1;
+    string json = 2;
+    string base64 = 3;
+  }
+}
+
+// Request to unsubscribe from account updates
+message AccountUnsubscribeRequest {
+  repeated string subscription_ids = 1;
+}
+
+// Response from unsubscribing
+message AccountUnsubscribeResponse {
+  bool success = 1;
+  string message = 2;
+}

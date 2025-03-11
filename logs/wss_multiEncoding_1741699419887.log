@@ -1,0 +1,13 @@
+=== wss_multiEncoding started at 2025-03-11T13:23:39.887Z ===
+
+Subscribing to pool 8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj...
+WebSocket connection established
+WebSocket connection established
+WebSocket connection established
+WebSocket connection established
+Subscription ID: 469
+Subscription ID: 477
+Subscription ID: 478
+Subscription ID: 478
+
+=== wss_multiEncoding exited with code null at 2025-03-11T13:23:44.206Z ===
